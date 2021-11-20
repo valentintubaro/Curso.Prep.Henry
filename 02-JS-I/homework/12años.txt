@@ -1,0 +1,5 @@
+Las variables son cajas en las cuales yo almaceno datos, yo almaceno cosas para despues cuando las necesite, poder llamarlas.
+Las strings son datos unicamente de texto, y sirven solo para eso, no se leen como cosas para hacer sino que son palabras, asi como tu nombre, tus hobbies y para diferenciarlas las ponemos entre " " o entre ' '.
+Las funciones son procedimientos para relizar funciones, toma en cuenta lo que esta pasando y hace algo, "retorna", es decir me devuelve lo que le dije.
+Las declaraciones son condiciones en las que si se cumple la primera se realiza una accion la primera es llamada "if", si se realiza la segunda se realiza otra accion "if else", y sino se realiza otra accion por descarte llamada "else". los "else if" se pueden repetir cuantas veces queramos.
+Los valores booleanos son formas en las que tengo para decirle al programa si algo es verdadero o es falso, entonces si es falso va a tomar un camino y si es verdadero va a tomar otro
