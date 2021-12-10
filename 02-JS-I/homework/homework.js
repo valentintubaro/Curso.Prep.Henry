@@ -12,8 +12,12 @@ const nuevoBool = true;
 // Resuelve el siguiente problema matemático:
 const nuevaResta = 10 - 5 === 5;
 
+
 // Resuelve el siguiente problema matemático:npm
 const nuevaMultiplicacion = 10 * 4 === 40 ;
+
+// Resuelve el siguiente problema matemático:
+
 
 // Resuelve el siguiente problema matemático:
 const nuevoModulo = 21 % 5 === 1;
@@ -79,14 +83,18 @@ function menosQueNoventa(num)
   // Devuelve "true" si el argumento de la función "num" es menor que noventa
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (num < 90)
-  return true;
-  else return false;
+
+  if (num < 90) {
+  return true;}
+  else{
+  return false;
+}
 
 function mayorQueCincuenta(num)
   // Devuelve "true" si el argumento de la función "num" es mayor que cincuenta
   // De lo contrario, devuelve "false"
   // Tu código:
+
   if (num > 50)
     true;
 
@@ -99,6 +107,8 @@ function obtenerResto(x, y) {
   // Tu código:
      return x % y;
 
+}
+
 
 function esPar(num) {
 if (num % 2 === 0) {
@@ -107,7 +117,8 @@ return true;
   return false;
 }
 }
-}
+
+
 function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
