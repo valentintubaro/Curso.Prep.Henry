@@ -65,9 +65,9 @@ function sonIguales(x, y){
   // De lo contrario, devuelve "false"
   // Tu código:
   if (x === y){
-  return true;}
+  return true}
 
-  else {return false;}
+  else return false
   }
 function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
@@ -135,14 +135,14 @@ function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
   // Tu código:
- 
+ return num*num
   
 }
 
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
-  
+  return num*num*num 
 }
 
 function elevar(num, exponent) {
