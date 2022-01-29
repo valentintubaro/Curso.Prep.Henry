@@ -10,7 +10,7 @@ function crearUsuario() {
   // Tu código:
   function Usuario(opciones) {
   this.usuario = opciones.usuario
-  this.nombre = opciones.usuario;
+  this.nombre = opciones.nombre;
   this.email = opciones.email;
   this.password = opciones.password;
 }
@@ -47,12 +47,12 @@ function agregarStringInvertida() {
   //Crea el constructor de la clase "Persona"
   //Debe tener las propiedades: "nombre", "apellido", "edad" y "domicilio"
   //Debe tener un método llamado "detalle" que nos devuelve un objeto con las propiedades de la persona y sus valores.
-  //Ej: { 
+  //Ej: {
     //   Nombre: 'Juan',
     //   Apellido: 'Perez',
     //   Edad: 22,
     //   Domicilio: 'Saavedra 123'
-    //  }
+    //  }npm
 
   class Persona {
     constructor(nombre, apellido, edad, domicilio) {
@@ -79,15 +79,15 @@ function crearInstanciaPersona(nombre, apellido, edad, dir) {
   //Devolver la nueva persona creada
   return new Persona(nombre,apellido,edad,dir);
 }
-  
+
 function agregarMetodo() {
-  //La función agrega un método "datos" a la clase Persona que toma el nombre y la edad de la persona y devuelve: 
+  //La función agrega un método "datos" a la clase Persona que toma el nombre y la edad de la persona y devuelve:
   //Ej: "Juan, 22 años"
 Persona.prototype.datos = function(){
   return this.nombre + this.edad;
 }
 }
-  
+
 
 // No modificar nada debajo de esta línea
 // --------------------------------
@@ -97,6 +97,6 @@ module.exports = {
   agregarMetodoPrototype,
   agregarStringInvertida,
   crearInstanciaPersona,
-  agregarMetodo, 
+  agregarMetodo,
   Persona
 };

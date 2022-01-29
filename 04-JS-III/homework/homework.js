@@ -1,4 +1,4 @@
-// No cambies los nombres de las funciones.
+ // No cambies los nombres de las funciones.
 
 function devolverPrimerElemento(array) {
   // Devuelve el primer elemento de un  array (pasado por parametro)
@@ -67,7 +67,14 @@ function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
- 
+for (i = 0; i <=array.length; i++)
+{
+  if (elemento ===[i]){
+    return true
+  }
+  return false
+
+}
 }
 
 
@@ -105,7 +112,7 @@ function numeroMasGrande(numeros) {
   // Tu código:
 var mayor = numeros[0]
 
-for (i - 1; i < numeros.length; i++){
+for (i =  1; i < numeros.length; i++){
   if (numeros[i] > mayor){
     mayor = numeros[i]
   }
@@ -116,7 +123,7 @@ return mayor
 
 function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
-  // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
+// Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
   var producto = 1;
   if (multiplicarArgumentos.length === 0){
@@ -125,7 +132,7 @@ function multiplicarArgumentos() {
   var producto = arguments[0];
   for(i = 0; i < arguments.length ; i++){
     producto = producto* arguments[i]
-  
+
   }
   return producto;
 }
@@ -134,13 +141,13 @@ function multiplicarArgumentos() {
 function cuentoElementos(arreglo){
   //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 18.
   //Escribe tu código aquí
-var elementos = 0;
+var elemento = 0;
 for (i = 0; i<arreglo.length; i++){
   if (arreglo[i] > 18){
 elemento++}
 return elemento
 }
-
+}
 
 function diaDeLaSemana(numeroDeDia) {
   //Suponga que los días de la semana se codifican como 1 = Domingo, 2 = Lunes y así sucesivamente.
@@ -195,9 +202,9 @@ function mesesDelAño(array) {
     if(nuevoArray.length<3){
       return "No se encontraron los meses"
     }
-  } 
-  else{
-  return nuevoArray}
+  }
+
+  return nuevoArray;
 }
 
 
@@ -206,9 +213,13 @@ function mayorACien(array) {
   //valores mayores a 100 (no incluye el 100). Finalmente devolver el nuevo array.
   // Tu código:
 var nuevoArray=[];
-for(var i=0; i<array.length;i++){{
-  if(array[i]>100)
+for(var i=0; i<array.length;i++){
+  if(array[i]>100){
+    nuevoArray.push[i]
+  }
+
 }
+return nuevoArray
 }
 
 
@@ -221,20 +232,20 @@ function breakStatement(numero) {
   //Pista: usá el statement 'break'
   // Tu código:
   var array=[0];
-  for(var i=0; i<10; i++){
+  for(var i = 0; i < 10; i++){
     numero=numero+2;
     if (numero===i)break;
   else {
     array.push(numero);
   }
+  
 if(i<10){
   return "Se interrumpio la ejecucion";
-}else{
+}else {
   return array;
 }
 }
 }
-
 
 function continueStatement(numero) {
   //Iterar en un bucle aumentando en 2 el numero recibido hasta un límite de 10 veces.
@@ -243,7 +254,15 @@ function continueStatement(numero) {
   //Cuando el número de iteraciones alcance el valor 5, no se suma en ese caso y se continua con la siguiente iteración
   //Pista: usá el statement 'continue'
   // Tu código:
-
+  var array=[];
+  for(var i =0; i<10;i++){
+    if(i===5)continue;
+    else{
+      numero = numero +2;
+      array.push(numero)
+    }
+  }
+  return array;
 }
 
 

@@ -1,0 +1,58 @@
+El tema de prototype es asi, vos en javascript, tenes jerarquias, (Este viene de este y asi), dado esto
+yo puedo trabajar con esa jerarquia para heredar funciones, datos y lo que necesite
+con la palabra prototype yo puedo crear nuevas funciones y aclararle a java script desde donde quiero
+que hereda datos esta funcion, Mira este ejemplo:
+
+    function crearUsuario() {
+        // Crea una Clase de ES6 o una función constructor llamada "Usuario"
+        // Debe aceptar un objeto "opciones" con las propiedades "usuario", "nombre", "email" y "password"
+        // En el `contructor`, define el usuario, el nombre, el email y la contraseña
+        // El `contructor` debe tener un método llamado "saludar" en su `prototype` que devuelva una string 'Hola, mi nombre es {{nombre}}'
+        // {{nombre}} debe ser el nombre definido en cada instancia
+        // Devuelve la clase
+        // Tu código:
+     function Usuario(opciones) {
+     this.usuario = opciones.usuario
+     this.nombre = opciones.nombre;
+     this.email = opciones.email;
+     this.password = opciones.password;
+    }
+   Usuario.prototype.saludar = function() {
+     return "Hola mi nombre es " + this.nombre;
+   };
+   return Usuario;
+  }
+  
+
+En este ejemplo se nos pide crear una clase o funcion constructora llamada "Usuario" entonces nosotros 
+lo creamos y le pasamos lo parametros de "usuario", "nombre", "email" y "password", y los defino en el constructor
+para hacer esto yo tomo el parametro y lo tageo con la palabra "this" el this me ayuda a traer
+ese argumento que se encuentra en esta funcion constructora llamada usuario y lo igualo a lo que tenga opciones
+ en las propiedades con el mismo nombre; lo vinculo podemos decir, lo igualo. Entonces lo declaro en la propiedad 
+ya que lo igualo a lo que tenga el objeto "opciones" que en este caso tiene el mismo nombre, lo declaro para que
+despues cuando cree el objeto tenga estos parametros recibidos en vez de ponerlo de forma manual.
+
+Ahora que ya declaramos los parametros recibidos podemos crear un metodo con ellos, un metodo es una function
+dentro de un objeto que usa los parametros recibidos y los devuelve como se lo indiquemos,
+en este caso devuelve Mi nombre es y el nombre Y que es eso de ¿Usuario.prototype.saludar? bueno, esa, es la forma
+de indicarle a javascript la jerarquia, es decir de donde va a sacar los parametros a devolver en el metodo, Mira
+dice Usuario.prototype.saludar aca yo le indico a javascript que estoy creando un metodo llamado saludar 
+el cual es prototype de Usuario y despues lo declaro, digo la accion a realizar de este metodo que en este caso
+es devolver el nombre de la siguiente manera:
+
+function() {
+    return "Hola mi nombre es " + this.nombre;
+  };
+
+Es una function que returna "Hola mi nombre es [Y obtiene el parametro nombre declarado en su protype usuario]
+
+Las cosas se almacenan asi porque es imposible estar escribiendo nombre por nombre entonces lo automatizo. Yo 
+recibo un dato y lo devuelvo, en vez de escribir dato por dato.
+
+
+
+
+
+
+
+
